@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hệ thống quản lý các giải đấu chuyên nghiệp. Hỗ trợ tổ chức giải đấu dễ dàng, đưa thông tin giải đấu chính xác đến mọi người">
+    <meta name="author" content="">
+
+    <title>AUSLeague</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans|Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+
+            <a class="navbar-brand js-scroll-trigger" href="index.html">AUSLeague</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">THÔNG TIN GIẢI ĐẤU</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#list">GIẢI ĐANG DIỄN RA</a>
+                            <a class="dropdown-item" href="#list">GIẢI SẮP KHỞI TRANH</a>
+                            <a class="dropdown-item" href="#list">GIẢI ĐÃ KẾT THÚC</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">BẢNG XẾP HẠNG</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#list">BXH Đội Bóng</a>
+                            <a class="dropdown-item" href="#list">BXH Cầu Thủ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary btn-lg nav-link"><a href ="login.html" style ="color:black">Đăng nhập</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="input-group search-bar text-center">
+                <input type="text" class="form-control" placeholder="Search your goods">
+                <div class="input-group-append">
+                    <button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- list Grid -->
+    <section class="bg-light page-section" id="list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 list-item">
+                    <a class="list-link" data-toggle="modal" href="#chart-item-1">
+                        <img class="img-fluid" src="./image/football.jpg" alt="">
+                    </a>
+                    <div class="list-caption">
+                        <h4 style="font-weight: bold">Giải A</h4>
+                        <a class="text-muted a-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Từ 31-12-2020 đến 01-01-2020
+                        </a>
+                        <hr class="featurette-divider ">
+                        <span class="dot">
+                            <a href="#">
+                                <button type="button" class="btn btn-outline-warning">Xem chi tiết</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 list-item">
+                    <a class="list-link" data-toggle="modal" href="#chart-item-2">
+                        <img class="img-fluid" src="./image/football.jpg" alt="">
+                    </a>
+                    <div class="list-caption">
+                        <h4 style="font-weight: bold">Giải B</h4>
+                        <a class="text-muted a-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Từ 31-12-2020 đến 01-01-2020
+                        </a>
+                        <hr class="featurette-divider ">
+                        <span class="dot">
+                            <a href="#">
+                                <button type="button" class="btn btn-outline-warning">Xem chi tiết</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 list-item">
+                    <a class="list-link" data-toggle="modal" href="#chart-item-3">
+                        <img class="img-fluid" src="./image/football.jpg" alt="">
+                    </a>
+                    <div class="list-caption">
+                        <h4 style="font-weight: bold">Giải C</h4>
+                        <a class="text-muted a-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Từ 31-12-2020 đến 01-01-2020
+                        </a>
+                        <hr class="featurette-divider ">
+                        <span class="dot">
+                            <a href="#">
+                                <button type="button" class="btn btn-outline-warning">Xem chi tiết</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 list-item">
+                    <a class="list-link" data-toggle="modal" href="#chart-item-4">
+                        <img class="img-fluid" src="./image/football.jpg" alt="">
+                    </a>
+                    <div class="list-caption">
+                        <h4 style="font-weight: bold">Giải D</h4>
+                        <a class="text-muted a-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Từ 31-12-2020 đến 01-01-2020
+                        </a>
+                        <hr class="featurette-divider ">
+                        <span class="dot">
+                            <a href="#">
+                                <button type="button" class="btn btn-outline-warning">Xem chi tiết</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 list-item">
+                    <a class="list-link" data-toggle="modal" href="#chart-item-5">
+                        <img class="img-fluid" src="./image/football.jpg" alt="">
+                    </a>
+                    <div class="list-caption">
+                        <h4 style="font-weight: bold">Giải E</h4>
+                        <a class="text-muted a-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Từ 31-12-2020 đến 01-01-2020
+                        </a>
+                        <hr class="featurette-divider ">
+                        <span class="dot">
+                            <a href="#">
+                                <button type="button" class="btn btn-outline-warning">Xem chi tiết</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 list-item">
+                    <a class="list-link" data-toggle="modal" href="#chart-item-5">
+                        <img class="img-fluid" src="./image/football.jpg" alt="">
+                    </a>
+                    <div class="list-caption">
+                        <h4 style="font-weight: bold">Giải F</h4>
+                        <a class="text-muted a-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Từ 31-12-2020 đến 01-01-2020
+                        </a>
+                        <hr class="featurette-divider ">
+                        <span class="dot">
+                            <a href="#">
+                                <button type="button" class="btn btn-outline-warning">Xem chi tiết</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <span class="copyright">Copyright &copy; AUSLeague</span>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-inline quicklinks">
+                                <li class="list-inline-item">
+                                    <a class="text-muted" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-muted" href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Plugin JavaScript -->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for this template -->
+            <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
