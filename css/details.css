@@ -20,19 +20,371 @@ a:hover {
 }
 
 h1,
-h2 {
-    font-family: 'Oswald', sans-serif;
-}
-
+h2,
 h3,
 h4 {
-    font-family: Franklin Gothic Medium, sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 h5,
 h6 {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+
+/* Three column layout */
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 60%;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+}
+
+
+/* Place text to the right */
+
+.right {
+    text-align: right;
+}
+
+
+/* Clear floats after the columns */
+
+.row-rate:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-rate {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* The bar container */
+
+.bar-container {
+    width: 90%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+
+/* Individual bars */
+
+.bar-up {
+    width: 60%;
+    height: 18px;
+    background-color: #4CAF50;
+}
+
+.bar-down {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+@media (max-width: 400px) {
+    .side,
+    .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
+
+.border-user {
+    border-style: solid;
+    border: 1px solid #fed136;
+    border-radius: 16px;
+    height: 60px;
+    width: 150px;
+    background-color: none;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.review-avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    width: 25%;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #fed136;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid #fed136;
+}
+
+
+/* Main content */
+
+.main {
+    margin-top: 30px;
+    /* Add a top margin to avoid content overlay */
+}
+
+
+/*profile card*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card p button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card p button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+
+/* Style the list */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.slideshow-container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.columnslide {
+    float: left;
+    width: 20.00%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/*table style*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 .product-title {
@@ -50,6 +402,19 @@ h6 {
 .content {
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
+}
+
+.btn-contact {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
 }
 
 .btn-buynow {
@@ -92,7 +457,7 @@ h6 {
 }
 
 .page-section {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 .page-section h2.section-heading {
@@ -313,11 +678,11 @@ header.masthead {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    padding-bottom: 20px;
 }
 
 header.masthead .search-bar {
     padding-top: 90px;
+    padding-bottom: 25px;
 }
 
 header.masthead .search-bar input,
@@ -361,6 +726,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
     header.masthead .search-bar {
         padding-top: 180px;
+        padding-bottom: 50px;
     }
     header.masthead .search-bar input,
     button {
@@ -385,76 +751,6 @@ header.masthead .intro-text .intro-heading {
     }
 }
 
-#sign-up {
-    background-color: #f7d14d;
-    position: relative;
-    border-radius: 25px;
-    padding: 20px 10px;
-    text-align: center;
-}
-
-#sign-up .sign-heading {
-    color: #fff;
-}
-
-#sign-up .text-muted {
-    padding-bottom: 25px;
-}
-
-#sign-up .form-group {
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#sign-up .form-group input,
-#sign-up .form-group textarea {
-    padding: 20px;
-}
-
-#sign-up .form-group input.form-control {
-    height: auto;
-    border-radius: 15px;
-}
-
-#sign-up .form-group textarea.form-control {
-    height: 248px;
-}
-
-#sign-up .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none;
-}
-
-#sign-up ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#sign-up :-moz-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#sign-up ::-moz-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#sign-up :-ms-input-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.service-heading {
-    margin: 15px 0;
-    text-transform: none;
-}
-
 #list .section-subheading {
     margin-bottom: 35px;
 }
@@ -473,18 +769,18 @@ header.masthead .intro-text .intro-heading {
     margin: 0 0 15px;
 }
 
+#list .list-item .img-fluid {
+    object-fit: cover;
+    height: 225px !important;
+    width: 350px !important;
+}
+
 #list .list-item .list-link {
     position: relative;
     display: block;
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
-}
-
-#list .list-item .list-link .img-fluid {
-    width: 350px !important;
-    height: 225px !important;
-    object-fit: cover;
 }
 
 #list .list-item .list-link .list-hover {
@@ -622,16 +918,6 @@ header.masthead .intro-text .intro-heading {
     /* IE 9 */
     transform: rotate(90deg);
     background-color: #212529;
-}
-
-#pdf {
-    border-radius: 15px;
-    background-color: #fed136;
-    color: black !important;
-    margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    padding: 15px 20px;
 }
 
 .footer {

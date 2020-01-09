@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Football App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body,
+      html {
+        height: 90%;
+        background-color:honeydew;
+      }
+  
+      .has-search .form-control {
+        padding-left: 10.375rem;
+      }
+  
+      .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 4;
+        display: block;
+        width: 3.375rem;
+        height: 3.375rem;
+        line-height: 3.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+      }
+      div.a {
+        text-align: center;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">QUẢN LÍ ĐỘI BÓNG</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                QUẢN LÍ GIẢI ĐẤU
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Danh sách giải đấu
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    Tạo giải đấu mới
+                  </a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HƯỚNG DẪN TẠO GIẢI</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">TIN TỨC</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admin
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      Thông tin
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      Đăng xuất
+                    </a>
+                </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">TẠO GIẢI ĐẤU <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                TẠO GIẢI ĐẤU KHÁC
+              </a>
+            </li>
+          </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-floppy-o" aria-hidden="true"></i>
+              LƯU
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+              NHẬP LẠI
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              QUAY LẠI
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p></p>
+    <h4>Đã tạo giải đấu thành công!</h4>
+    <div class="a">
+        <h2>Tên giải đấu</h2>
+        <img class="img-fluid" src="./Images/hinh-nen-giai-dau.jpg">
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-danger">Tạo mùa giải</button>
+        </div>
+      </div>
+      
+        
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
